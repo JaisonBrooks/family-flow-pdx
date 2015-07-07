@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!--<link href="css/external.css" rel="stylesheet"/>-->
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet"/>-->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">-->
+    <!--<link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">-->
+    <style>
+        img.logo {
+            margin:auto;
+            max-width:75%;
+            display: block;
+            opacity:0.85;
+        }
+        .jumbotron {
+            margin-bottom: 0;
+            padding: 72px auto;
+        }
+        @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            img.logo {
+                max-width: 100%;
+            }
+        }
+        .container-social {
+            /*	   position:fixed;*/
+            left:0px;
+            bottom:0px;
+            /*height:30px;*/
+            width:100%;
+            margin: 24px;
+            /*background:rgba(200,200,200,0.1);*/
+        }
+        span {
+            transition: all 0.2s ease-in-out;
+        }
+        span.fa-social {
+            margin-right:24px;
+        }
+        span:hover {
+            opacity: .7;
+        }
+        .text-shadow {
+            text-shadow:
+            -1px -1px 0 rgba(0,0,0,0.35),
+            1px -1px 0 rgba(0,0,0,0.35),
+            -1px 1px 0 rgba(0,0,0,0.35),
+            1px 1px 0 rgba(0,0,0,0.35);
+        }
+        .fa-stack-1x {
+            font-size:32px;
+        }
+        .fa-lg {
+            font-size: 2.25em;
+        }
+        .img-center {
+            margin:0 auto;
+            display: inline;
+        }
+        /*a {*/
+            /*color: orange;*/
+        /*}*/
+        /*a:hover {*/
+            /*color: lightblue;*/
+            /*text-decoration: none;*/
+        /*}*/
+        .modal {
+            overflow: auto;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+<div style="background: url('img/orbit.png'); color:white;">
+    <div class="jumbotron text-shadow" style="background-color:rgba(0,0,0,0.25);">
+        <div class="container text-center">
+            <h1>Family Flow PDX</h1>
+        </div>
+    </div>
+</div>
+<div class="jumbotron" style="background-color: #B5E61D;">
+    <div class="container text-center" style="border:solid 8px #a2cf1a; border-radius: 8px; background-color: rgba(255,255,255,0.15);">
+        <h1>About</h1>
+        <img src="img/bre_logo1.png" class="img-responsive img-center" width="92" style="margin-bottom: 16px;"/>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    </div>
+</div>
+
+<div style="background: url('img/hoops.png');">
+    <div class="jumbotron" style="background-color:rgba(255,255,255,0.35);">
+        <div class="container">
+            <h1>Hoops</h1>
+            <p style="font-weight: 500;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+            <div class="row">
+                <div class="col-xs-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3>Title of Hoop</h3>
+                        </div>
+                        <div class="panel-body">
+                            <img src="img/hoop1.jpg" class="img-rounded img-responsive" height="240"/>
+                        </div>
+                        <div class="panel-footer">
+                            <button class="btn btn-default">Buy on Paypal</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" >
+                            <h3>Title of Hoop</h3>
+                        </div>
+                        <div class="panel-body">
+                            <img src="img/hoop2.jpg" class="img-rounded img-responsive" height="240"/>
+                        </div>
+                        <div class="panel-footer">
+                            <button class="btn btn-default">Buy on Paypal</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3>Title of Hoop</h3>
+                        </div>
+                        <div class="panel-body">
+                            <img src="img/hoop3.jpg" class="img-rounded img-responsive" height="240"/>
+                        </div>
+                        <div class="panel-footer">
+                            <button class="btn btn-default">Buy on Paypal</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="jumbotron" style="background-color: #FF7F28;">
+    <div class="container text-center">
+        <h1>Gallery</h1>
+        <p>blahblahblahblahbl</p>
+        <div id="links">
+        <a href="img/photo1.jpg" title="" data-gallery>
+            <img src="img/photo1.jpg"  width="144" alt="">
+        </a>
+            <a href="img/photo2.jpg" title="" data-gallery>
+                <img src="img/photo2.jpg" width="144" alt="">
+            </a>
+            <a href="img/photo3.jpg" title="" data-gallery>
+                <img src="img/photo3.jpg"  width="144" alt="">
+            </a>
+            <a href="img/photo4.jpg" title="" data-gallery>
+                <img src="img/photo4.jpg"  width="144" alt="">
+            </a>
+            <a href="img/photo5.jpg" title="" data-gallery>
+                <img src="img/photo5.jpg"  width="144"  alt="">
+            </a>
+            <a href="img/photo6.jpg" title="" data-gallery>
+                <img src="img/photo6.jpg"  width="144" alt="">
+            </a>
+            <a href="img/photo7.jpg" title="" data-gallery>
+                <img src="img/photo7.jpg"  width="144" alt="">
+            </a>
+
+    </div>
+        <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+
+    </div>
+</div>
+
+
+<div id="blueimp-gallery" class="blueimp-gallery" data-use-bootstrap-modal="true">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        Previous
+                    </button>
+                    <button type="button" class="btn btn-primary next">
+                        Next
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!--<div id="blueimp-gallery" class="blueimp-gallery" data-use-bootstrap-modal="false">-->
+    <!--&lt;!&ndash; The container for the modal slides &ndash;&gt;-->
+    <!--<div class="slides"></div>-->
+    <!--&lt;!&ndash; Controls for the borderless lightbox &ndash;&gt;-->
+    <!--<h3 class="title"></h3>-->
+    <!--<a class="prev">‹</a>-->
+    <!--<a class="next">›</a>-->
+    <!--<a class="close">×</a>-->
+    <!--<a class="play-pause"></a>-->
+    <!--<ol class="indicator"></ol>-->
+    <!--&lt;!&ndash; The modal dialog, which will be used to wrap the lightbox content &ndash;&gt;-->
+    <!--<div class="modal fade">-->
+        <!--<div class="modal-dialog">-->
+            <!--<div class="modal-content">-->
+                <!--<div class="modal-header">-->
+                    <!--<button type="button" class="close" aria-hidden="true">&times;</button>-->
+                    <!--<h4 class="modal-title"></h4>-->
+                <!--</div>-->
+                <!--<div class="modal-body next"></div>-->
+                <!--<div class="modal-footer">-->
+                    <!--<button type="button" class="btn btn-default pull-left prev">-->
+                        <!--<i class="glyphicon glyphicon-chevron-left"></i>-->
+                        <!--Previous-->
+                    <!--</button>-->
+                    <!--<button type="button" class="btn btn-primary next">-->
+                        <!--Next-->
+                        <!--<i class="glyphicon glyphicon-chevron-right"></i>-->
+                    <!--</button>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+
+
+<div class="jumbotron" style="background-color: #EC407A;">
+    <div class="container text-center">
+        <h1>Contact</h1>
+        <>All of your contact information goes here :). <br/><br/></p>
+    </div>
+    <div class="text-center container-social">
+
+					<span class="fa-stack fa-lg fa-social">
+						<a href="https://www.facebook.com/trevor.atkinson.16" target="_blank">
+                            <i style="color:#3b5998;" class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                        </a>
+					</span>
+
+
+					<span class="fa-stack fa-lg fa-social">
+						<a href="http://vimeo.com/user4380612" target="_blank">
+                            <i style="color:#6DCEEE;" class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                        </a>
+					</span>
+
+					<span class="fa-stack fa-lg fa-social">
+					<a href="https://www.youtube.com/user/TreJuice09" target="_blank">
+                        <i style="color:#db4733;" class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-youtube-play fa-stack-1x fa-inverse"></i>
+                    </a>
+					</span>
+
+					<span class="fa-stack fa-lg fa-social">
+						<a href="http://www.about.me/jaisonbrooks" target="_blank">
+                            <i style="color:#AD1457;" class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-tumblr-square fa-stack-1x fa-inverse"></i>
+                        </a>
+				</span>
+    </div>
+</div>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+<script src="js/bootstrap-image-gallery.min.js"></script>
+
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+<!--<script src="js/external.js"></script>-->
+<!--<script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>-->
+<!--<script src="js/bootstrap-image-gallery.min.js"></script>-->
+
+</body>
+</html>
