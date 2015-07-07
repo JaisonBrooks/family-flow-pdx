@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>Family Flow PDX</title>
     <!--<link href="css/external.css" rel="stylesheet"/>-->
     <!--<link href="css/bootstrap.min.css" rel="stylesheet"/>-->
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
@@ -76,10 +76,334 @@
             overflow: auto;
             color: #333;
         }
+        .about-section {
+            background-color:rgba(255,255,255,0.1);
+            border: solid 2px rgba(0,0,0,0.1);
+            padding:16px;
+            border-radius: 6px;
+            margin: 24px auto;
+            box-sizing: border-box;
+            transition: ease 500ms;
+        }
+        .about-section:hover {
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+            border: solid 2px rgba(0,0,0,0.25);
+        }
+        .btn {
+            letter-spacing: 1px;
+            text-decoration: none;
+            background: none;
+            -moz-user-select: none;
+            background-image: none;
+            border: 1px solid transparent;
+            border-radius: 0;
+            cursor: pointer;
+            display: inline-block;
+            margin-bottom: 0;
+            vertical-align: middle;
+            white-space: nowrap;
+            font-size:14px;
+            line-height:20px;
+            font-weight:700;
+            text-transform:uppercase;
+            border: 3px solid;
+            padding:8px 20px;
+        }
+        .btn-outlined {
+            border-radius: 0;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+        .btn-outlined.btn-green {
+            background: none;
+            color: #00b44a;
+            border-color: #00b44a;
+        }
+        .btn-outlined.btn-green:hover,
+        .btn-outlined.btn-green:active {
+            color: #FFF;
+            background: #00b44a;
+            border-color: #00b44a;
+        }
+        .btn-outlined.btn-pink {
+            background: none;
+            color: #EEE;
+            border-color: #bc3361;
+        }
+        .btn-outlined.btn-pink:hover,
+        .btn-outlined.btn-pink:active {
+            color: #FFF;
+            background: #bc3361;
+            border-color: #bc3361;
+        }
+
+        .btn-xs{
+            font-size:11px;
+            line-height:14px;
+            border: 1px solid;
+            padding:5px 10px;
+        }
+        .btn-sm{
+            font-size:12px;
+            line-height:16px;
+            border: 2px solid;
+            padding:8px 15px;
+        }
+        .btn-lg {
+            font-size:18px;
+            line-height:22px;
+            border: 4px solid;
+            padding:13px 40px;
+        }
+        @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+            /*.btn {*/
+                /*display:block;*/
+            /*}*/
+        }
+
+
+        .center-cropped {
+            max-width: 100%;
+            max-height: 100%;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+
+        div.product-item {
+            background-color:#EC407A;
+            border:solid 4px rgba(0,0,0,0.10);
+            margin-bottom: 16px;
+        }
+        div.product-item-image {
+            max-width:100%;
+        }
+        div.product-item-image img {
+            object-fit: cover;
+        }
+        div.product-item-body {
+            padding:8px;
+        }
+        div.product-item-body h3.product-item-title {
+            color:#FFF;
+            margin-top:8px;
+            font-weight: 200;
+        }
+        div.product-item-body p.product-item-subtitle {
+            font-size:0.8em;
+            font-weight: 400;
+        }
+
+        img {
+            object-fit: cover;
+        }
+
+        .color-green {
+            color:#B5E61D !important;
+        }
+        span.product-dollar-amount {
+            float:right;
+            font-size:18px;
+            line-height: 2;
+            font-weight:bold;
+            padding-right: 4px;
+        }
+
+
+
+        /* CAROUSEL PRODUCT CART SLIDER **/
+
+        /*.col-item*/
+        /*{*/
+            /*border: 1px solid #E1E1E1;*/
+            /*border-radius: 5px;*/
+            /*background: #FFF;*/
+        /*}*/
+        /*.col-item .photo img*/
+        /*{*/
+            /*margin: 0 auto;*/
+            /*width: 100%;*/
+        /*}*/
+
+        /*.col-item .info*/
+        /*{*/
+            /*padding: 10px;*/
+            /*border-radius: 0 0 5px 5px;*/
+            /*margin-top: 1px;*/
+        /*}*/
+
+        /*.col-item:hover .info {*/
+            /*background-color: #F5F5DC;*/
+        /*}*/
+        /*.col-item .price*/
+        /*{*/
+            /*/!*width: 50%;*!/*/
+            /*float: left;*/
+            /*margin-top: 5px;*/
+        /*}*/
+
+        /*.col-item .price h5*/
+        /*{*/
+            /*line-height: 20px;*/
+            /*margin: 0;*/
+        /*}*/
+
+        /*.price-text-color*/
+        /*{*/
+            /*color: #219FD1;*/
+        /*}*/
+
+        /*.col-item .info .rating*/
+        /*{*/
+            /*color: #777;*/
+        /*}*/
+
+        /*.col-item .rating*/
+        /*{*/
+            /*/!*width: 50%;*!/*/
+            /*float: left;*/
+            /*font-size: 17px;*/
+            /*text-align: right;*/
+            /*line-height: 52px;*/
+            /*margin-bottom: 10px;*/
+            /*height: 52px;*/
+        /*}*/
+
+        /*.col-item .separator*/
+        /*{*/
+            /*border-top: 1px solid #E1E1E1;*/
+        /*}*/
+
+        /*.clear-left*/
+        /*{*/
+            /*clear: left;*/
+        /*}*/
+
+        /*.col-item .separator p*/
+        /*{*/
+            /*line-height: 20px;*/
+            /*margin-bottom: 0;*/
+            /*margin-top: 10px;*/
+            /*text-align: center;*/
+        /*}*/
+
+        /*.col-item .separator p i*/
+        /*{*/
+            /*margin-right: 5px;*/
+        /*}*/
+        /*.col-item .btn-add*/
+        /*{*/
+            /*width: 50%;*/
+            /*float: left;*/
+        /*}*/
+
+        /*.col-item .btn-add*/
+        /*{*/
+            /*border-right: 1px solid #E1E1E1;*/
+        /*}*/
+
+        /*.col-item .btn-details*/
+        /*{*/
+            /*width: 50%;*/
+            /*float: left;*/
+            /*padding-left: 10px;*/
+        /*}*/
+        /*.controls*/
+        /*{*/
+            /*margin-top: 20px;*/
+        /*}*/
+        /*[data-slide="prev"]*/
+        /*{*/
+            /*margin-right: 10px;*/
+        /*}*/
+        /** CAROUSEL PRODUCT CART SLIDER **/
+
+        /** BOOTSTRAP CLEARFIX **/
+        /*  Bootstrap Clearfix */
+
+        /*  Tablet  */
+        /*@media (min-width:767px){*/
+
+            /*/!* Column clear fix *!/*/
+            /*.col-lg-1:nth-child(12n+1),*/
+            /*.col-lg-2:nth-child(6n+1),*/
+            /*.col-lg-3:nth-child(4n+1),*/
+            /*.col-lg-4:nth-child(3n+1),*/
+            /*.col-lg-6:nth-child(2n+1),*/
+            /*.col-md-1:nth-child(12n+1),*/
+            /*.col-md-2:nth-child(6n+1),*/
+            /*.col-md-3:nth-child(4n+1),*/
+            /*.col-md-4:nth-child(3n+1),*/
+            /*.col-md-6:nth-child(2n+1){*/
+                /*clear: none;*/
+            /*}*/
+            /*.col-sm-1:nth-child(12n+1),*/
+            /*.col-sm-2:nth-child(6n+1),*/
+            /*.col-sm-3:nth-child(4n+1),*/
+            /*.col-sm-4:nth-child(3n+1),*/
+            /*.col-sm-6:nth-child(2n+1){*/
+                /*clear: left;*/
+            /*}*/
+        /*}*/
+
+
+        /*/!*  Medium Desktop  *!/*/
+        /*@media (min-width:992px){*/
+
+            /*/!* Column clear fix *!/*/
+            /*.col-lg-1:nth-child(12n+1),*/
+            /*.col-lg-2:nth-child(6n+1),*/
+            /*.col-lg-3:nth-child(4n+1),*/
+            /*.col-lg-4:nth-child(3n+1),*/
+            /*.col-lg-6:nth-child(2n+1),*/
+            /*.col-sm-1:nth-child(12n+1),*/
+            /*.col-sm-2:nth-child(6n+1),*/
+            /*.col-sm-3:nth-child(4n+1),*/
+            /*.col-sm-4:nth-child(3n+1),*/
+            /*.col-sm-6:nth-child(2n+1){*/
+                /*clear: none;*/
+            /*}*/
+            /*.col-md-1:nth-child(12n+1),*/
+            /*.col-md-2:nth-child(6n+1),*/
+            /*.col-md-3:nth-child(4n+1),*/
+            /*.col-md-4:nth-child(3n+1),*/
+            /*.col-md-6:nth-child(2n+1){*/
+                /*clear: left;*/
+            /*}*/
+        /*}*/
+
+
+        /*/!*  Large Desktop  *!/*/
+        /*@media (min-width:1200px){*/
+
+            /*/!* Column clear fix *!/*/
+            /*.col-md-1:nth-child(12n+1),*/
+            /*.col-md-2:nth-child(6n+1),*/
+            /*.col-md-3:nth-child(4n+1),*/
+            /*.col-md-4:nth-child(3n+1),*/
+            /*.col-md-6:nth-child(2n+1),*/
+            /*.col-sm-1:nth-child(12n+1),*/
+            /*.col-sm-2:nth-child(6n+1),*/
+            /*.col-sm-3:nth-child(4n+1),*/
+            /*.col-sm-4:nth-child(3n+1),*/
+            /*.col-sm-6:nth-child(2n+1){*/
+                /*clear: none;*/
+            /*}*/
+            /*.col-lg-1:nth-child(12n+1),*/
+            /*.col-lg-2:nth-child(6n+1),*/
+            /*.col-lg-3:nth-child(4n+1),*/
+            /*.col-lg-4:nth-child(3n+1),*/
+            /*.col-lg-6:nth-child(2n+1){*/
+                /*clear: left;*/
+            /*}*/
+        /*}*/
+
+
+
     </style>
 </head>
 <body>
-<div style="background: url('img/orbit.png'); color:white;">
+<div style="background: url('img/orbit.png');background-size: auto 120px; color:white;">
     <div class="jumbotron text-shadow" style="background-color:rgba(0,0,0,0.25);">
         <div class="container text-center">
             <h1>Family Flow PDX</h1>
@@ -91,91 +415,101 @@
     <div class="container text-center" style="border:solid 8px #a2cf1a; border-radius: 8px; background-color: rgba(255,255,255,0.15);">
         <h1>About</h1>
         <img src="img/bre_logo1.png" class="img-responsive img-center" width="92" style="margin-bottom: 16px;"/>
-        <!--<p>Family Flow PDX is fun, physical entertainment for the whole family!</p><br/>-->
         <p><b>FFPDX</b> is a family-oriented business that offers a fun and unique experience for children, teens and adults of all ages. Our services incorporate the art of hula-hooping, poi-spinning and other flow arts. The goal of Family Flow PDX is to inspire your whole family to have fun while staying active and to find the flow in your family.</p>
         <div class="row">
             <div class="col-sm-4">
-                <div style="background-color:rgba(255,255,255,0.1); border: solid 2px rgba(0,0,0,0.1); padding:16px; border-radius: 6px; margin: 24px auto;">
+                <div class="about-section">
                     <h3>Hooping</h3>
                     <hr style="border-color: rgba(0,0,0,0.10);">
-                    <p>...</p>
+                    <p><b>Hooping</b> or as more commonly known <em>"Hula-hooping"</em> is the art of movement and dance with a hoop. We offer a variety of products and services ranging from an array of pre-built and custom made hoops to classes for yourself or entire family.<br/></p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="#" target="_blank" class="btn btn-outlined btn-green btn-sm">Buy Now</a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="https://en.wikipedia.org/wiki/Hooping" target="_blank" class="btn btn-outlined btn-green btn-sm">Learn More</a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <div class="col-sm-4">
-                <div style="background-color:rgba(255,255,255,0.1); border: solid 2px rgba(0,0,0,0.1); padding:16px; border-radius: 6px; margin: 24px auto;">
+                <div class="about-section">
                     <h3>Poi-Spinning</h3>
                     <hr style="border-color: rgba(0,0,0,0.10);">
-                    <p>...</p>
+                    <p><b>Poi</b> is a style of performing arts and involves the swinging of tethered weight through a variety of rhythmical patterns.<br/><br/><em><small>Products/Services coming soon</small></em></p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="#" target="_blank" class="btn btn-outlined btn-green btn-sm btn-sm">Interested?</a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="https://en.wikipedia.org/wiki/Poi_(performance_art)" target="_blank" class="btn btn-outlined btn-green btn-sm">Learn More</a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-sm-4">
-                <div style="background-color:rgba(255,255,255,0.1); border: solid 2px rgba(0,0,0,0.1); padding:16px; border-radius: 6px; margin: 24px auto;">
+                <div class="about-section">
                     <h3>and even more...</h3>
                     <hr style="border-color: rgba(0,0,0,0.10);">
-                    <p>...</p>
+                    <p>There are several other flow arts that our business is interested in.</p>
+                    <ul class="text-left">
+                        <li>Staffing</li>
+                        <li>Rope Dart</li>
+                        <li>and even more...</li>
+                    </ul>
+                    <p>If you have a type of flow art you would like too see us offer.</p>
+                    <a href="#contact" class="btn btn-outlined btn-green btn-sm">Contact Us</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<div style="background: url('img/hoops.png');">
-    <div class="jumbotron" style="background-color:rgba(255,255,255,0.35);">
+<div style="background: url('img/hoops/hoops.png');">
+    <div class="jumbotron" style="background-color:rgba(255,255,255,0.25);">
         <div class="container">
             <h1>Products</h1>
-            <p style="font-weight: 500;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
-            <div class="row">
-                <div class="col-xs-4">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3>Title of Hoop</h3>
-                        </div>
-                        <div class="panel-body">
-                            <img src="img/hoop1.jpg" class="img-rounded img-responsive" height="240"/>
-                        </div>
-                        <div class="panel-footer">
-                            <button class="btn btn-default">Buy on Paypal</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-4">
-                    <div class="panel panel-default">
-                        <div class="panel-heading" >
-                            <h3>Title of Hoop</h3>
-                        </div>
-                        <div class="panel-body">
-                            <img src="img/hoop2.jpg" class="img-rounded img-responsive" height="240"/>
-                        </div>
-                        <div class="panel-footer">
-                            <button class="btn btn-default">Buy on Paypal</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-4">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3>Title of Hoop</h3>
-                        </div>
-                        <div class="panel-body">
-                            <img src="img/hoop3.jpg" class="img-rounded img-responsive" height="240"/>
-                        </div>
-                        <div class="panel-footer">
-                            <button class="btn btn-default">Buy on Paypal</button>
-                        </div>
-                    </div>
-                </div>
 
-
-
+            <div id="products_list" class="row">
+                <!--<div class="col-sm-4">-->
+                    <!--<div class="product-item">-->
+                        <!--<div class="product-item-image">-->
+                            <!--<img src="img/hoop1.jpg" class="img-responsive center-cropped"/>-->
+                        <!--</div>-->
+                        <!--<div class="product-item-body">-->
+                            <!--<h3 class="text-left product-item-title">Title <span class="product-dollar-amount text-right color-green">$$.$$</span></h3>-->
+                            <!--<p class="text-left product-item-subtitle">Description\n\n\n</p>-->
+                            <!--<a href="#" class="btn btn-outlined btn-sm btn-pink">Buy Now</a>-->
+                            <!--&lt;!&ndash;<div class="row">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<div class="col-xs-3">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<div style="background:rgba(255,255,255,0.25);border-radius: 20px;padding:12px auto;">&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<p class="text-center" style="font-size:14px;text-transform: uppercase; margin:6px auto;font-weight:bold; color:#A349A4;">Tag</p>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
             </div>
         </div>
     </div>
 </div>
 
-<div class="jumbotron">
+
+
+<div class="jumbotron" style="background-color:#A349A4;">
     <div class="container">
-        <h1>Services</h1>
-        <p>etc.etc.etc</p>
+        <h1 style="color:white;" class="text-right">Services</h1>
+        <ul class="text-left" style="color:#e5e5e5;">
+            <li><p>Single Class for 1 Parent and 1 Child: $20 ~~INTRODUCTORY OFFER!~~ (includes lesson on basic hooping and poi tricks, 1 and 1/2 hour)</p></li>
+            <li><p>Single Class for Whole Family: $45
+                (includes lesson on basic hooping and poi tricks, 1 and 1/2 hour)</p></li>
+            <li><p>Class Series of 3 for 1 Parent and 1 Child: $45
+                (includes lesson on basic hooping and poi tricks and more!, 1 and 1/2 hour, 3 classes)</p></li>
+            <li><p>Class Series of 3 for Whole Family: $90
+                (includes lesson on basic hooping and poi tricks and more!, 1 and 1/2 hour, 3 classes)</p></li>
+        </ul>
     </div>
 </div>
 
@@ -183,33 +517,8 @@
 <div class="jumbotron" style="background-color: #FF7F28;">
     <div class="container text-center">
         <h1>Gallery</h1>
-        <p>blahblahblahblahbl</p>
-        <div id="links">
-        <a href="img/photo1.jpg" title="" data-gallery>
-            <img src="img/photo1.jpg"  width="144" alt="">
-        </a>
-            <a href="img/photo2.jpg" title="" data-gallery>
-                <img src="img/photo2.jpg" width="144" alt="">
-            </a>
-            <a href="img/photo3.jpg" title="" data-gallery>
-                <img src="img/photo3.jpg"  width="144" alt="">
-            </a>
-            <a href="img/photo4.jpg" title="" data-gallery>
-                <img src="img/photo4.jpg"  width="144" alt="">
-            </a>
-            <a href="img/photo5.jpg" title="" data-gallery>
-                <img src="img/photo5.jpg"  width="144"  alt="">
-            </a>
-            <a href="img/photo6.jpg" title="" data-gallery>
-                <img src="img/photo6.jpg"  width="144" alt="">
-            </a>
-            <a href="img/photo7.jpg" title="" data-gallery>
-                <img src="img/photo7.jpg"  width="144" alt="">
-            </a>
-
-    </div>
-        <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
-
+        <p>View some photos of friends and family hula-hooping.</p>
+        <div id="links"></div>
     </div>
 </div>
 
@@ -286,16 +595,72 @@
 <!--</div>-->
 
 
+<div class="jumbotron" style="background-color: #FFF200;">
+    <div class="container">
+        <h1 class="text-left">FAQ</h1>
+        <p>Frequently asked questions</p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-4">
+                <div style="border: solid 4px rgba(0,0,0,0.25);background-color:rgba(255,255,255,0.10); padding:8px;">
+                    <strong>Question: </strong><p>The question</p>
+                    <strong>Answer: </strong><p>The Answer</p>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div style="border: solid 4px rgba(0,0,0,0.25);background-color:rgba(255,255,255,0.10); padding:8px;">
+                    <strong>Question: </strong><p>The question</p>
+                    <strong>Answer: </strong><p>The Answer</p>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div style="border: solid 4px rgba(0,0,0,0.25);background-color:rgba(255,255,255,0.10); padding:8px;">
+                    <strong>Question: </strong><p>The question</p>
+                    <strong>Answer: </strong><p>The Answer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <div class="jumbotron" style="background-color: #EC407A;">
     <div class="container text-center">
-        <h1>Contact</h1>
-        <>All of your contact information goes here :). <br/><br/></p>
+        <h1 class="text-center">Contact</h1>
+        <p>If you want to contact us regarding a purchase, custom hoop or any other feedback or request. Please use the below contact form, or by email at<b>familyflowpdx@gmail.com</b> or by phone at <b>(503) 839-0105</b>.</p>
+        <form class="text-center" style="width:50%;margin: 0 auto;">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea rows="5" class="form-control" id="message" placeholder="Message"></textarea>
+            </div>
+            <!--<div class="form-group">-->
+                <!--<label for="exampleInputFile">File input</label>-->
+                <!--<input type="file" id="exampleInputFile">-->
+                <!--<p class="help-block">Example block-level help text here.</p>-->
+            <!--</div>-->
+            <!--<div class="checkbox">-->
+                <!--<label>-->
+                    <!--<input type="checkbox"> Check me out-->
+                <!--</label>-->
+            <!--</div>-->
+            <button type="submit" class="btn btn-outlined btn-pink">Submit</button>
+            <br/><br/>
+        </form>
     </div>
     <div class="text-center container-social">
+                <h2>Follow <strong>FFPDX</strong></h2>
 
 					<span class="fa-stack fa-lg fa-social">
-						<a href="https://www.facebook.com/trevor.atkinson.16" target="_blank">
+						<a href="https://www.facebook.com/familyflowpdx" target="_blank">
                             <i style="color:#3b5998;" class="fa fa-circle fa-stack-2x"></i>
                             <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
                         </a>
@@ -303,14 +668,28 @@
 
 
 					<span class="fa-stack fa-lg fa-social">
-						<a href="http://vimeo.com/user4380612" target="_blank">
+						<a href="https://twitter.com/familyflowpdx" target="_blank">
                             <i style="color:#6DCEEE;" class="fa fa-circle fa-stack-2x"></i>
                             <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
                         </a>
 					</span>
 
+                    <span class="fa-stack fa-lg fa-social">
+						<a href="http://familyflowpdx.tumblr.com/" target="_blank">
+                            <i style="color:#36465d;" class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-tumblr-square fa-stack-1x fa-inverse"></i>
+                        </a>
+					</span>
+
+                    <span class="fa-stack fa-lg fa-social">
+					<a href="https://instagram.com/familyflowpdx/" target="_blank">
+                        <i style="color:#3f729b;" class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                    </a>
+					</span>
+
 					<span class="fa-stack fa-lg fa-social">
-					<a href="https://www.youtube.com/user/TreJuice09" target="_blank">
+					<a href="https://www.youtube.com/channel/UCmQOWufECzFlJ_WGK-th0IQ" target="_blank">
                         <i style="color:#db4733;" class="fa fa-circle fa-stack-2x"></i>
                         <i class="fa fa-youtube-play fa-stack-1x fa-inverse"></i>
                     </a>
@@ -319,7 +698,7 @@
 					<span class="fa-stack fa-lg fa-social">
 						<a href="http://www.about.me/jaisonbrooks" target="_blank">
                             <i style="color:#AD1457;" class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-tumblr-square fa-stack-1x fa-inverse"></i>
+                            <i class="fa fa-code fa-stack-1x fa-inverse"></i>
                         </a>
 				</span>
     </div>
@@ -327,11 +706,10 @@
 
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/index.js"></script>
 <script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
 <script src="js/bootstrap-image-gallery.min.js"></script>
-
-<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
-<!--<script src="js/external.js"></script>-->
+<script src="js/external.js"></script>
 <!--<script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>-->
 <!--<script src="js/bootstrap-image-gallery.min.js"></script>-->
 

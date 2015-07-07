@@ -1,0 +1,41 @@
+{
+  "products": {
+    "hoops": [
+      {
+        "title": "Another hoop",
+        "type": "adult",
+        "description": "This hoop is pretty much awesome and you should buy it.",
+        "photo": "/img/hoops/hoop1.jpg",
+        "price": "$25"
+      },
+      {
+        "title": "Even another",
+        "type": "adult",
+        "description": "Who doesnt want a bad Ass hoop, come on!",
+        "photo": "/img/hoops/hoop2.jpg",
+        "price": "$25"
+      },
+      {
+        "title": "Mystery hoop",
+        "type": "adult",
+        "description": "The assortment of hoops",
+        "photo": "/img/hoops/hoop3.jpg",
+        "price": "$25"
+      },
+      {
+        "title": "Lizard hoop",
+        "type": "adult",
+        "description": "The lizard hoop is a trip, its awesome and cool and you want it!",
+        "photo": "/img/hoops/lizard_hoop.jpg",
+        "price": "$25"
+      },
+      {
+        "title": "Unknown hoop",
+        "type": "adult",
+        "description": "Its unknown, mystery and awesome.",
+        "photo": "/img/hoops/unknown.jpg",
+        "price": "$25"
+      }
+    ]
+  }
+}
