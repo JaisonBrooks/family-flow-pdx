@@ -33,7 +33,7 @@ $(function () {
         success: function (data) {
             //Lsit all png file names in the page
             $(data).find("a:contains(" + fileextension + ")").each(function () {
-                var filename = this.href.replace(window.location.host, "").replace("http:///", "");
+                var filename = this.href.replace(window.location.host, "").replace("https:///", "");
 
                 var html = '' +
                     '<a href="'  + filename +
