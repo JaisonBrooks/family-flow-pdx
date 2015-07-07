@@ -1,6 +1,6 @@
 $(function () {
     var products = $('#products_list');
-    $.getJSON("/json/products.json", function(data) {
+    $.getJSON("json/products.json", function(data) {
 
         var hoops = [];
         $.each(data.products.hoops, function(index, item) {
