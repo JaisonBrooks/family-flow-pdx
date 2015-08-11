@@ -25,26 +25,32 @@ $(function () {
         $(products).html(hoops);
     });
 
-    var dir = "img/photos/";
-    var fileextension = ".jpg";
-    $.ajax({
-        //This will retrieve the contents of the folder if the folder is configured as 'browsable'
-        url: dir,
-        success: function (data) {
-            //Lsit all png file names in the page
-            $(data).find("a:contains(" + fileextension + ")").each(function () {
-                var filename = this.href.replace(window.location.host, "").replace("http://", "");
 
-                var html = '' +
-                    '<a href="'  + filename +
-                    '" title="" data-gallery>' +
-                    '<img src="'  + filename + '" width="144" alt=""/>' +
-                    '</a>';
+    var photoset = "72157657092571525";
 
-                $('#links').append(html);
-            });
-        }
-    });
+    $.getJSON("https://api.flickr.com/services/rest/?api_key=b4bbdbd564f3362675aaf802be6ca80b&method=flickr.photosets.getPhotos&user_id=134645738%40N07&format=json&photoset_id=" + photoset + "&extras=url_sq%2Curl_t%2Curl_s%2Curl_m%2Curl_o&nojsoncallback=1",
+        function(data){
+            //if the image has a location, build an html snippet containing the data
+            if(data.stat != 'fail') {
+                console.log(data);
+
+                var photos = [];
+
+                $.each(data.photoset.photo, function (k,val) {
+                    var photo = '' +
+                        '<a href="' + val.url_o +'" data-gallery><img src="' + val.url_o +'" width="144" /></a>';
+                    photos.push(photo);
+                });
+
+                $('#links').append(photos);
+
+            } else {
+                console.log('fail');
+            }
+
+        });
+
+
 
     console.log("Author: Jaison Brooks :)");
 
